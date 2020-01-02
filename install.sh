@@ -30,6 +30,6 @@ pip install yamllint yq
 
 # Cleanup
 apk del --purge install-deps
-rm -rf /get_helm.sh
+rm /get_helm.sh
 rm /var/cache/apk/*
 rm -rf /tmp/*
