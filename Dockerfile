@@ -17,7 +17,7 @@ COPY install.sh /opt/install.sh
 RUN set -eux \
         && apk update \
         && apk --no-cache upgrade \
-        && apk add --update bash ca-certificates git python jq \
+        && apk add --update bash ca-certificates git python jq gettext bash-completion \
         && chmod +x /opt/install.sh \
         && /opt/install.sh
 
